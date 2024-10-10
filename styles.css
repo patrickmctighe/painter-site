@@ -3,6 +3,10 @@ body{
     font-family: "Space Mono", monospace;
     margin:0px;
 }
+html{
+    height: 100vh;
+    width: 100vw;
+}
 .homeImg{
     height: 35em;
     border: 4px solid black;
@@ -12,13 +16,19 @@ body{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1em;
+    flex-direction: column;
+    padding-top: 1em;
     background-color: #333;
 }
-
+.logoAndTabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
 .navBar{
     width:80vw;
-    height: 7em;
+    height: 5em;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -60,7 +70,7 @@ body{
 }
 
 .navLogo{
-    height:7em;
+    height:5em;
     padding-top: .5em;
     padding-bottom: .5em;
 }
@@ -73,14 +83,22 @@ body{
     visibility: hidden;
 
 }
+.homeMainCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4.5em;
+}
 
 .homeMain{
     display: flex;
    
     justify-content: center;
     align-items: center;
- 
+    height:70vh;
     gap:5em;
+    
 }
 
 .homeText{
@@ -88,11 +106,17 @@ body{
     font-size: 1.7em;
     text-align: center;
 }
-
-.serviceMain{
+.servicesMainCont{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap:.5em;
+}
+.serviceMain{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
     height:70vh;
 
@@ -112,6 +136,13 @@ body{
 
 }
 
+.reviewsMainCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:3em;
+}
 
 .contact{
     display: flex;
@@ -177,4 +208,27 @@ gap:0em
 .rating{
     font-size: 2em;
     margin:0px;
+}
+
+.headerEffect{
+    display:flex;
+ 
+    align-items:center;
+    width: 99vw;
+}
+.sphere{
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%; 
+    position: relative;
+    top: 1em;
+    z-index: 1;
+    transition: width 2s, height 1s;
+    margin:-5px
+}
+@keyframes fallToBottom {
+    to {
+        transform: translateY(50vh);
+    }
 }
