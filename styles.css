@@ -215,6 +215,35 @@ html {
   transition: width 2s, height 1s;
   margin: -5px;
 }
+.lists{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:.5em;
+  font-size:.78em;
+}
+.list1{
+  width:45vw
+}
+.list2{
+  width:50vw
+}
+.ul1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5em;
+
+}
+.ul2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5em;
+  
+}
 @keyframes fallToBottom {
   to {
     transform: translateY(50vh);
@@ -360,12 +389,13 @@ html {
   }
 
   .serviceText {
-    width: 95vw;
+    width: 90vw;
     font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
   .serviceImg {
@@ -386,8 +416,10 @@ html {
   .contact {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    padding-top: .75em;
+    padding-bottom: .75em';
   }
 
   .phoneImg {
@@ -403,6 +435,7 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1em;
+    
   }
 
   .email {
@@ -468,6 +501,42 @@ html {
     z-index: 1;
     transition: width 2s, height 1s;
     margin: -5px;
+  }
+  .lists{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    font-size:.9em;
+    flex-direction: column;
+  }
+  .list1{
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .list2{
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ul1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+  margin:0
+  }
+  .ul2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    margin:0
   }
 
   @keyframes fallToBottom {
