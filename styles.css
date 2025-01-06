@@ -266,6 +266,7 @@ html {
     width: 90vw;
     height: auto;
     border: 4px solid black;
+    margin-top: 2em;
   }
 
   .navContainer {
