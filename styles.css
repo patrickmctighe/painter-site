@@ -254,12 +254,13 @@ html {
 @media (max-width: 639px) {
   body {
     overflow-x: hidden;
-   
+    -webkit-overflow-scrolling: touch;
   }
   html {
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
  
