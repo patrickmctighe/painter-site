@@ -437,7 +437,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: .5em;
     
   }
 
@@ -445,7 +445,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: .25em;
+    font-size: .9em;
   }
 
   .reviews {
@@ -512,6 +513,7 @@ html {
     gap:0.5em;
     font-size:.9em;
     flex-direction: column;
+    padding-right: 2em;
   }
   .list1{
     width:90vw;
