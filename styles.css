@@ -438,7 +438,8 @@ html {
     align-items: center;
     justify-content: center;
     gap: .5em;
-    
+    color:black;
+    text-decoration: none;
   }
 
   .email {
